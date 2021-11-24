@@ -1,0 +1,53 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.menu-container{
+    color: #fff;
+    background-color: #5995DA;
+    padding: 80px 0;
+    display: flex;
+    /*Alinear horizontalmente los items*/
+    justify-content:center ;
+}
+.menu{
+    width: 900px;
+    display: flex;
+    /*Al ponerle flex al contenedor directo de los items, los pone inline*/
+    /*Distribucion horizontal*/
+    justify-content:space-around;
+}
+.section-container{
+    color: #000;/*Color de la letra*/
+    background-color: green;
+    display: flex;
+    justify-content: center;
+}
+.section{
+    width: 900px;
+    display: flex;
+    /*Alinear verticalmente los items*/
+    align-items:center;
+    /*Flex wrap tira los elementos para abajo que no entran horizontalmente*/
+    flex-wrap: wrap;
+    
+}
+.photo-grid-container{
+    display: flex;
+    justify-content: center;
+}
+.photo-grid{
+    width: 900px;
+    display: flex;
+    justify-content: center;
+    /*flex-wrap: wrap;*/
+    /* El flex-direction Transformar las filas en columnas o viceversa*/
+    /*flex-direction: column;/*Pone todo en columnas*/
+}
+.first-item{
+    order: 2; /*Me lo pone lo mas a la derecha posible*/
+}
+.second-item{
+    order:1; /*El de arriba lo pone mas a la derecha porque su valor es mayor*/
+}
+/*El order es como un eje x, si pongo negativos los mueve a la izquierda*/
